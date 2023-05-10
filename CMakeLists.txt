@@ -7,7 +7,7 @@ find_package(CUDA)
 
 # Select several CUDA architectures
 include(FindCUDA)
-cuda_select_nvcc_arch_flags(CUDA_ARCH_FLAGS Common) # Change Common by Auto for autodetect
+cuda_select_nvcc_arch_flags(CUDA_ARCH_FLAGS Auto) # Change Common by Auto for autodetect
 string(REPLACE ";" " " CUDA_ARCH_FLAGS "${CUDA_ARCH_FLAGS}")
 set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} ${CUDA_ARCH_FLAGS}")
 
