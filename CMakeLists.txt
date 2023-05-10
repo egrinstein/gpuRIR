@@ -1,5 +1,5 @@
 # https://stackoverflow.com/questions/51907755/building-a-pybind11-module-with-cpp-and-cuda-sources-using-cmake
-
+set(CMAKE_CUDA_COMPILER "/usr/local/cuda/bin/nvcc")
 cmake_minimum_required(VERSION 3.12)
 
 project(gpuRIR LANGUAGES CXX CUDA)
